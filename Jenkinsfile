@@ -9,9 +9,9 @@ pipeline {
     stages {
         stage('Init') {
             steps {
-                sh " " "
-                    ls -ltr
-                " " "
+                sh """
+                 ls -ltr
+                """
             }
         }
         stage('Plan') {
