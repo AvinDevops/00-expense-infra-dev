@@ -10,7 +10,9 @@ pipeline {
         stage('Init') {
             steps {
                 sh """
-                 ls -l
+                // ls -l
+                cd 01-vpc
+                terraform init -reconfigure
                 """
             }
         }
